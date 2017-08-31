@@ -84,6 +84,17 @@ public class Validator {
         }
     }
     
+    public func validate(string: String, rules: [Rule]) -> (valid: Bool, errors: [ValidationError]?) {
+        let errors = rules.filter{
+            return !$0.validate(string)
+            }
+            .map { rule -> ValidationError in
+                return ValidationError(field: nil, errorLabel:nil, error: rule.errorMessage())
+            }
+        
+        return (valid: errors.count == 0, errors: errors)
+    }
+    
     // MARK: Using Keys
     
     /**

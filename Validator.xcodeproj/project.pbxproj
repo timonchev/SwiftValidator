@@ -19,6 +19,7 @@
 		7CC1E4D51C637C8500AF013C /* IPV4Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E4D41C637C8500AF013C /* IPV4Rule.swift */; };
 		7CC1E4D71C637F6E00AF013C /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E4D61C637F6E00AF013C /* ISBNRule.swift */; };
 		7CC1E4DB1C63BFA600AF013C /* HexColorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E4DA1C63BFA600AF013C /* HexColorRule.swift */; };
+		8CBF0EB71F58362500496508 /* DateRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBF0EB61F58362500496508 /* DateRule.swift */; };
 		CE11CAA51F04D27B009BB9C5 /* IntegerRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11CAA41F04D27B009BB9C5 /* IntegerRule.swift */; };
 		FB465CB81B9884F400398388 /* SwiftValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = FB465CB71B9884F400398388 /* SwiftValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB465CBE1B9884F400398388 /* SwiftValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB465CB31B9884F400398388 /* SwiftValidator.framework */; };
@@ -108,6 +109,7 @@
 		7CC1E4D41C637C8500AF013C /* IPV4Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPV4Rule.swift; sourceTree = "<group>"; };
 		7CC1E4D61C637F6E00AF013C /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
 		7CC1E4DA1C63BFA600AF013C /* HexColorRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorRule.swift; sourceTree = "<group>"; };
+		8CBF0EB61F58362500496508 /* DateRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRule.swift; sourceTree = "<group>"; };
 		CE11CAA41F04D27B009BB9C5 /* IntegerRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerRule.swift; sourceTree = "<group>"; };
 		FB465CB31B9884F400398388 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB465CB61B9884F400398388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				7CC1E4D21C637ABC00AF013C /* CharacterSetRule.swift */,
 				7CC1E4D41C637C8500AF013C /* IPV4Rule.swift */,
 				7CC1E4D61C637F6E00AF013C /* ISBNRule.swift */,
+				8CBF0EB61F58362500496508 /* DateRule.swift */,
 				7CC1E4DA1C63BFA600AF013C /* HexColorRule.swift */,
 				FB465CE31B9889EA00398388 /* ConfirmRule.swift */,
 				FB465CE41B9889EA00398388 /* EmailRule.swift */,
@@ -501,6 +504,7 @@
 			files = (
 				FB465CF41B9889EA00398388 /* EmailRule.swift in Sources */,
 				FB465CF61B9889EA00398388 /* FullNameRule.swift in Sources */,
+				8CBF0EB71F58362500496508 /* DateRule.swift in Sources */,
 				FBA963631CDA10130071F03E /* ValidatorDictionary.swift in Sources */,
 				FB465CFF1B9889EA00398388 /* ZipCodeRule.swift in Sources */,
 				FB465CF91B9889EA00398388 /* PasswordRule.swift in Sources */,

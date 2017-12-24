@@ -38,9 +38,11 @@ open class DateRule: Rule {
     open func validate(_ value: String) -> Bool {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = dateFormat
-        
-        guard let _ = dateFormatter.date(from: value) else {
+      
+        if (!value.isEmpty) {
+          guard let _ = dateFormatter.date(from: value) else {
             return false
+          }
         }
         return true
     }

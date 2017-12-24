@@ -33,9 +33,12 @@ public class IntegerRule : Rule {
      - returns: Boolean value. True if validation is successful; False if validation fails.
      */
     public func validate(_ value: String) -> Bool {
+        if (value.isEmpty) {
+          return true
+        }
         let regex = try? NSRegularExpression(pattern: "^[0-9]+$", options: [])
         if let regex = regex {
-            let match = regex.numberOfMatches(in: value, options: [], range: NSRange(location: 0, length: value.characters.count))
+            let match = regex.numberOfMatches(in: value, options: [], range: NSRange(location: 0, length: value.count))
             return match == 1
         }
         return false

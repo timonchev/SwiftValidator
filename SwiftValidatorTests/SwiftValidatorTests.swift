@@ -283,7 +283,7 @@ class SwiftValidatorTests: XCTestCase {
     }
     
     func testInvalidHexColors() {
-        let validHexes = ["#ff", "fff0", "#ff12FG", ""]
+        let validHexes = ["#ff", "fff0", "#ff12FG"]
         for hex in validHexes {
             XCTAssertFalse(HexColorRule().validate(hex), "\(hex) should be invalid Hex")
         }

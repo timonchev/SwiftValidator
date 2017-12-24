@@ -32,7 +32,7 @@ public class FullNameRule : Rule {
      */
     public func validate(_ value: String) -> Bool {
         let nameArray: [String] = value.split { $0 == " " }.map { String($0) }
-        return nameArray.count >= 2
+        return value.isEmpty || nameArray.count >= 2
     }
     
     /**

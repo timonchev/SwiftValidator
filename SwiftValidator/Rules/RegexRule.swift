@@ -37,7 +37,7 @@ open class RegexRule : Rule {
      */
     open func validate(_ value: String) -> Bool {
         let test = NSPredicate(format: "SELF MATCHES %@", self.REGEX)
-        return test.evaluate(with: value)
+        return value.isEmpty || test.evaluate(with: value)
     }
     
     /**
